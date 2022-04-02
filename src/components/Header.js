@@ -69,7 +69,7 @@ export default function Header() {
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button class="btn btn-outline-dark" type="submit">
+              <button class="btn btn-outline-light" type="submit">
                 Search
               </button>
             </form>
