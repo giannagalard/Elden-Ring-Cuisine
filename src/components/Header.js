@@ -10,7 +10,7 @@ export default function Header() {
       >
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            The Fellowship of the Elden Ring
+            Elden Ring Restaurant
           </a>
           <button
             class="navbar-toggler"
@@ -23,8 +23,11 @@ export default function Header() {
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav d-flex">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">
                   Home
@@ -32,47 +35,30 @@ export default function Header() {
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#">
-                  Stocks
+                  About
                 </a>
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Settings
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">
+                  Menu
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      Security
-                    </a>
-                  </li>
-                  <hr class="dropdown-divider" />
-
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      insert other if needed
-                    </a>
-                  </li>
-                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">
+                  Gallery
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">
+                  Order Online
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">
+                  Contact Us
+                </a>
               </li>
             </ul>
-            <form class="d-flex">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-light" type="submit">
-                Search
-              </button>
-            </form>
           </div>
         </div>
       </nav>

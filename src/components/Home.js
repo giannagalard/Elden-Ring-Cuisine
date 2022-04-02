@@ -1,21 +1,15 @@
 import React, { Fragment } from "react";
 import "../styles/home.css";
+import logo from "../images/logo.png";
 
 export default function Home() {
   return (
     <Fragment>
       <div className="header">
-        <h1>The Fellowship of the Elden Ring</h1>
-      </div>
-      <div className="subHeader">
-        <h2>Stock Trading and Investing</h2>
+        <h1>The Elden Ring Restaurant</h1>
       </div>
       <div className="image">
-        <img
-          className="stockImage"
-          src="https://data.whicdn.com/images/354770748/original.jpg"
-          alt="image"
-        />
+        <img className="stockImage" src={logo} alt="logo" />
       </div>
       <div className="body">
         <p>
