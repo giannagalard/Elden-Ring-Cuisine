@@ -29,7 +29,7 @@ export default function Header() {
           >
             <ul class="navbar-nav d-flex">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="home">
+                <a class="nav-link" aria-current="page" href="home">
                   Home
                 </a>
               </li>
