@@ -11,7 +11,6 @@ export default function Home() {
       <div className="image">
         <img className="stockImage" src={logo} alt="logo" />
       </div>
-
       <div className="divider">
         <a href="/order">
           <button
