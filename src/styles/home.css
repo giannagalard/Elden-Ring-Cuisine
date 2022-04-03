@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
 body {
-  background-color: #B3A2A5;
+  background-color: #340D06;
+  font-family: 'EB Garamond', serif;
 }
 
 .header {
-    background-color: #B3A2A5;
-    color: #fff;
+    background-color: #330E06;
+    color: #F2D1C8;
     text-align: center;
     margin-top: 30px;
+    font-weight: bold;
+    font-size: 75px;
 }
 
 .subHeader {

@@ -6,7 +6,7 @@ export default function Header() {
     <Fragment>
       <nav
         class="navbar navbar-expand-lg navbar-dark"
-        style={{ backgroundColor: " #84719B" }}
+        style={{ backgroundColor: " #721702" }}
       >
         <div class="container-fluid">
           <a class="navbar-brand" href="#">

@@ -1,9 +1,4 @@
-/* @font-face {
-  font-family: 'Garamond Premier Pro Bold';
-  font-style: normal;
-  font-weight: normal;
-  src: url('./fonts/GPPB.otf');
-} */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 
 body {
   margin: 0;
