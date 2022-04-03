@@ -10,7 +10,7 @@ export default function Header() {
       >
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            Elden Ring Restaurant
+            Elden Ring Cuisine
           </a>
           <button
             class="navbar-toggler"
