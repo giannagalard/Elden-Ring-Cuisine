@@ -11,13 +11,15 @@ export default function Home() {
       <div className="image">
         <img className="stockImage" src={logo} alt="logo" />
       </div>
-      <button
-        type="button"
-        class="btn btn-secondary btn-lg"
-        style={{ backgroundColor: " #721702" }}
-      >
-        Order Online
-      </button>
+      <div className="divider">
+        <button
+          type="button"
+          class="btn btn-secondary btn-lg"
+          style={{ backgroundColor: " #721702" }}
+        >
+          Order Online
+        </button>
+      </div>
     </Fragment>
   );
 }
