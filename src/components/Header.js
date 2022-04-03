@@ -9,7 +9,7 @@ export default function Header() {
         style={{ backgroundColor: " #721702" }}
       >
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="/home">
             Elden Ring Cuisine
           </a>
           <button
@@ -29,32 +29,32 @@ export default function Header() {
           >
             <ul class="navbar-nav d-flex">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+                <a class="nav-link active" aria-current="page" href="home">
                   Home
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">
+                <a class="nav-link" aria-current="page" href="/about">
                   About
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">
+                <a class="nav-link" aria-current="page" href="/menu">
                   Menu
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">
+                <a class="nav-link" aria-current="page" href="/gallery">
                   Gallery
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">
+                <a class="nav-link" aria-current="page" href="/order">
                   Order Online
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">
+                <a class="nav-link" aria-current="page" href="/contact">
                   Contact Us
                 </a>
               </li>
