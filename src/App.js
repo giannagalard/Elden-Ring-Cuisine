@@ -1,9 +1,12 @@
 import Home from "./components/Home.js";
-import Stocks from "./components/Stocks.js";
-import Settings from "./components/Settings.js";
 import NotFound from "./components/NotFound.js";
 import Footer from "./components/Footer.js";
 import Header from "./components/Header.js";
+import About from "./components/About.js";
+import Contact from "./components/Contact.js";
+import Gallery from "./components/Gallery.js";
+import Menu from "./components/Menu.js";
+import Order from "./components/Order.js";
 
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -16,8 +19,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/stocks" element={<Stocks />} />
-          <Route path="/settings" element={<Settings />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/order" element={<Order />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
