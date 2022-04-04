@@ -1,14 +1,20 @@
 import React, { Fragment } from "react";
 import paper from "../images/paper.png";
 import "../styles/about.css";
+import { Hidden } from "@mui/material";
 
 export default function About() {
   return (
     <Fragment>
       <div style={{ paddingBottom: "2.5rem" }}>
-        <div className="aboutImage">
-          <img className="paper" src={paper} alt="paper" />
-          <div className="aboutHeader">
+        <Hidden smDown>
+          <Hidden mdDown>
+            <div className="aboutImage">
+              <img className="paper" src={paper} alt="paper" />
+            </div>
+          </Hidden>
+        </Hidden>
+        {/* <div className="aboutHeader">
             <h1>About Us</h1>
           </div>
           <div className="aboutText">
@@ -28,8 +34,7 @@ export default function About() {
               serving here. What is thou waiting for? Come and visit any of our
               establishments!
             </p>
-          </div>
-        </div>
+          </div> */}
       </div>
     </Fragment>
   );
