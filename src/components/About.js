@@ -14,7 +14,7 @@ export default function About() {
           <div className="aboutText">
             <p>
               The Elden Ring Restaurant has been around for a very long time,
-              even during the reign of the first elden lord. Our business is has
+              even during the reign of the first elden lord. Our business is
               spread all across the Lands Between having one restaurant in each
               area. Limgrave, Caelid, Liurnia of the Lakes, Atlus Plateau, Mt.
               Gelmir, Mountaintops of the Giants, and The River Kingdoms. These
