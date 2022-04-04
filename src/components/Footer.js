@@ -6,7 +6,12 @@ export default function Footer() {
     <Fragment>
       <footer
         className=" text-center text-white"
-        style={{ backgroundColor: "#721702" }}
+        style={{
+          backgroundColor: "#721702",
+          position: "absolute",
+          bottom: 0,
+          width: "100%",
+        }}
       >
         <div
           className="text-center p-3"
