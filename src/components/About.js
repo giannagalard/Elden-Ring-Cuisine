@@ -8,16 +8,25 @@ export default function About() {
       <div style={{ paddingBottom: "2.5rem" }}>
         <div className="aboutImage">
           <img className="paper" src={paper} alt="paper" />
-        </div>
-        <div className="aboutText">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Pellentesque euismod, urna eu tincidunt consectetur, nisi nisl
-            aliquam nunc, eget egestas nisl nisi eu ipsum. Nulla facilisi. Nulla
-            facilisi. Pellentesque euismod, urna eu tincidunt consectetur, nisi
-            nisl aliquam nunc, eget egestas nisl nisi eu ipsum. Nulla facilisi.
-            Nulla facilisi.
-          </p>
+          <div className="aboutHeader">
+            <h1>About Us</h1>
+          </div>
+          <div className="aboutText">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque euismod, urna eu tincidunt consectetur, nisi nisl
+              aliquam nunc, eget egestas nisl nisi eu ipsum. Nulla facilisi.
+              Nulla facilisi. Pellentesque euismod, urna eu tincidunt
+              consectetur, nisi nisl aliquam nunc, eget egestas nisl nisi eu
+              ipsum. Nulla facilisi. Nulla facilisi. Pellentesque euismod, urna
+              eu tincidunt consectetur, nisi nisl aliquam nunc, eget egestas
+              nisl nisi eu ipsum. Nulla facilisi. Nulla facilisi. Pellentesque
+              euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc,
+              eget egestas nisl nisi eu ipsum. Nulla facilisi. Nulla facilisi.
+              Pellentesque euismod, urna eu tincidunt consectetur, nisi nisl
+              aliquam nunc, eget egestas nisl nisi eu ipsum. Nulla facilisi.
+            </p>
+          </div>
         </div>
       </div>
     </Fragment>
