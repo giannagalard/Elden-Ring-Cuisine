@@ -6,7 +6,7 @@ export default function About() {
   return (
     <Fragment>
       <div style={{ paddingBottom: "2.5rem" }}>
-        <div className="image">
+        <div className="aboutImage">
           <img className="paper" src={paper} alt="paper" />
         </div>
         <div className="aboutText">
