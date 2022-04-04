@@ -9,8 +9,9 @@ export default function Footer() {
         style={{
           backgroundColor: "#721702",
           position: "absolute",
-          bottom: 0,
           width: "100%",
+          left: "0",
+          bottom: "0",
         }}
       >
         <div
