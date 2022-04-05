@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import paper from "../images/paper.png";
+import chefYeezus from "../images/chefYeezus.png";
 import "../styles/about.css";
 import { Hidden } from "@mui/material";
 
@@ -41,6 +42,13 @@ export default function About() {
             </div>
           </div>
         </div>
+      </Hidden>
+      <Hidden smDown>
+        <Hidden lgUp>
+          <div className="yeezus">
+            <img className="chefYeezus" src={chefYeezus} alt="chefYeezus" />
+          </div>
+        </Hidden>
       </Hidden>
     </Fragment>
   );
