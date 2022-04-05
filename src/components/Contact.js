@@ -91,7 +91,7 @@ export default function Contact() {
             <div class="text-center text-md-left">
               <p>&nbsp;</p>
               <a
-                class="btn btn-primary"
+                class="btn btn-secondary"
                 onclick="document.getElementById('contact-form').submit();"
                 style={{ backgroundColor: " #721702" }}
               >
@@ -104,7 +104,7 @@ export default function Contact() {
             <ul class="list-unstyled mb-0">
               <li>
                 <i class="fas fa-map-marker-alt fa-2x"></i>
-                <p>*insrt location l8r*</p>
+                <p>Royal Capital, Atlus Plateau, 02022</p>
               </li>
 
               <li>
