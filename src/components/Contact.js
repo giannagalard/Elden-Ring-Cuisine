@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { Hidden } from "@mui/material";
 
 export default function Contact() {
   return (
@@ -10,6 +11,27 @@ export default function Contact() {
         >
           Contact us
         </h2>
+
+        <Hidden smUp>
+          <div class="col-md-3 text-center" style={{ color: "#F2D1C8" }}>
+            <ul class="list-unstyled mb-0">
+              <li>
+                <i class="fas fa-map-marker-alt fa-2x"></i>
+                <p>Royal Capital, Atlus Plateau, 02022</p>
+              </li>
+
+              <li>
+                <i class="fas fa-phone mt-4 fa-2x"></i>
+                <p>(347)-215-8537</p>
+              </li>
+
+              <li>
+                <i class="fas fa-envelope mt-4 fa-2x"></i>
+                <p>eldenRingCuisine@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+        </Hidden>
 
         <div class="row">
           <div class="col-md-9 mb-md-0 mb-5">
@@ -100,24 +122,26 @@ export default function Contact() {
             </div>
             <div class="status"></div>
           </div>
-          <div class="col-md-3 text-center" style={{ color: "#F2D1C8" }}>
-            <ul class="list-unstyled mb-0">
-              <li>
-                <i class="fas fa-map-marker-alt fa-2x"></i>
-                <p>Royal Capital, Atlus Plateau, 02022</p>
-              </li>
+          <Hidden smDown>
+            <div class="col-md-3 text-center" style={{ color: "#F2D1C8" }}>
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <i class="fas fa-map-marker-alt fa-2x"></i>
+                  <p>Royal Capital, Atlus Plateau, 02022</p>
+                </li>
 
-              <li>
-                <i class="fas fa-phone mt-4 fa-2x"></i>
-                <p>(347)-215-8537</p>
-              </li>
+                <li>
+                  <i class="fas fa-phone mt-4 fa-2x"></i>
+                  <p>(347)-215-8537</p>
+                </li>
 
-              <li>
-                <i class="fas fa-envelope mt-4 fa-2x"></i>
-                <p>eldenRingCuisine@gmail.com</p>
-              </li>
-            </ul>
-          </div>
+                <li>
+                  <i class="fas fa-envelope mt-4 fa-2x"></i>
+                  <p>eldenRingCuisine@gmail.com</p>
+                </li>
+              </ul>
+            </div>
+          </Hidden>
         </div>
       </section>
     </Fragment>
