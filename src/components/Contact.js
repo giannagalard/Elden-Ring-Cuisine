@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import { Hidden } from "@mui/material";
+import "../styles/contact.css";
 
 export default function Contact() {
   return (
@@ -22,7 +23,8 @@ export default function Contact() {
 
               <li>
                 <i class="fas fa-phone mt-4 fa-2x"></i>
-                <p>(347)-215-8537</p>
+                <p>1-337-EDN-RING </p>
+                <p>EXT: G1T-GUD</p>
               </li>
 
               <li>
@@ -68,6 +70,7 @@ export default function Contact() {
                       id="email"
                       name="email"
                       class="form-control"
+                      color="#F2D1C8"
                     />
                     {/* <label for="email" class="" style={{ color: "#F2D1C8" }}>
                       Your email
@@ -132,7 +135,8 @@ export default function Contact() {
 
                 <li>
                   <i class="fas fa-phone mt-4 fa-2x"></i>
-                  <p>(347)-215-8537</p>
+                  <p>1-337-EDN-RING </p>
+                  <p>EXT: G1T-GUD</p>
                 </li>
 
                 <li>
