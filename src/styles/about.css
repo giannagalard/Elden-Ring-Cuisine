@@ -1,0 +1,51 @@
+.aboutImage {
+    height: 100vh;
+    width: auto;
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.paper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutHeader{
+    /* position text over image
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    font-weight: bold;
+    font-size: 50px;
+    color: #F2D1C8;
+}
+.aboutText {
+    /* position text over image
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    /* adjust font and fun stuff */
+    font-size: 20px;
+    font-weight: bold;
+    width: 90%;
+    margin-top: 5%;
+
+    color: #D9A3A3;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.aboutTextContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
