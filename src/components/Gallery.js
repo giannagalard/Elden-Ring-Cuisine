@@ -1,5 +1,13 @@
-import React from "react";
+import React, { Fragment } from "react";
+import underConstruction from "../images/underConstruction.svg";
 
 export default function Gallery() {
-  return <div>Gallery</div>;
+  return (
+    <Fragment>
+      <div className="menuImage">
+        <img className="menuSize" src={underConstruction} alt="menu" />
+      </div>
+      <div className="menuDivider"></div>
+    </Fragment>
+  );
 }
