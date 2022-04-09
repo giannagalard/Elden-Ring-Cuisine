@@ -1,6 +1,10 @@
 .menuImage {
-    width: 100vw;
-    height: auto;
-    display: flex;
-    justify-content: center;
+  margin-top: 30px;
+}
+
+img {
+  max-width: 100%;
+  height: auto\9;
+  width: auto\9;
+  margin-bottom: 90px;
 }
