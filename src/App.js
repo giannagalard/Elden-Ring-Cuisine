@@ -7,6 +7,7 @@ import Contact from "./components/Contact.js";
 import Gallery from "./components/Gallery.js";
 import Menu from "./components/Menu.js";
 import Order from "./components/Order.js";
+import Chef from "./components/Chef.js";
 
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -25,6 +26,7 @@ function App() {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/menu" element={<Menu />} />
             <Route path="/order" element={<Order />} />
+            <Route path="/chef" element={<Chef />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />
