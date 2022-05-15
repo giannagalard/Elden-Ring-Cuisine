@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from "react";
 import "../styles/header.css";
 import { onAuthStateChanged, getAuth } from "firebase/auth";
-import { app as app } from "../firebase/firebase.js";
+import { app  } from "../firebase/firebase.js";
 
 export default function Header() {
 

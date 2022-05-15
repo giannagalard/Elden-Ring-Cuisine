@@ -3,7 +3,7 @@ import { Box, Button, Avatar } from '@mui/material'
 import GoogleIcon from '@mui/icons-material/Google';
 import { useNavigate } from "react-router-dom";
 import { onAuthStateChanged, getAuth } from "firebase/auth";
-import { app as app } from "../firebase/firebase.js";
+import { app  } from "../firebase/firebase.js";
 
 
 export default function GoogleLogin({ signInWithGoogle }) {
