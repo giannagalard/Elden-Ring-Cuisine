@@ -15,7 +15,7 @@ export default function Home() {
         <a href="/order">
           <button
             type="button"
-            class="btn btn-secondary btn-lg"
+            className="btn btn-secondary btn-lg"
             style={{ backgroundColor: " #721702" }}
           >
             Order Online
