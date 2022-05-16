@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from "react";
 import "../styles/header.css";
 import { onAuthStateChanged, getAuth } from "firebase/auth";
-import { app  } from "../firebase/firebase.js";
+import { app } from "../firebase/firebase.js";
 
 export default function Header() {
 
@@ -73,6 +73,11 @@ export default function Header() {
                   <li className="nav-item">
                     <a className="nav-link" aria-current="page" href="/order">
                       Order Online
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" aria-current="page" href="/cart">
+                      Cart
                     </a>
                   </li>
                   <li className="nav-item">

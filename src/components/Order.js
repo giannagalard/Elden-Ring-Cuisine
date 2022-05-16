@@ -2,7 +2,7 @@ import React, { Fragment, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { onAuthStateChanged, getAuth } from "firebase/auth";
 import { app, db } from "../firebase/firebase.js";
-import { doc, getDoc } from "@firebase/firestore";
+import { doc, getDoc, updateDoc, arrayUnion } from "@firebase/firestore";
 import { Box, Grid, CircularProgress } from "@mui/material";
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -14,6 +14,7 @@ import Typography from '@mui/material/Typography';
 export default function Order() {
   const [menu, setMenu] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [user, setUser] = useState(null);
   const navigate = useNavigate();
   const auth = getAuth(app);
 
@@ -33,23 +34,37 @@ export default function Order() {
   onAuthStateChanged(auth, (user) => {
     if (!user) {
       navigate("/login")
+    } else {
+      setUser(user);
     }
   });
+
+  const addToCart = async (item) => {
+    const cartRef = doc(db, "cart", "orders");
+    await updateDoc(cartRef, {
+      [user.uid]: arrayUnion({
+        item_id: item.id,
+        name: item.name,
+        price: item.price,
+        image: item['item-image'],
+      })
+    });
+  }
+
 
   return (
     <Fragment>
       <Box>
-
         {loading ? (
           <CircularProgress />
         ) : (
-          <Grid container spacing={3}>
+          <Grid container spacing={3} padding={10} >
             {menu.map((item) => (
-              <Grid item xs={12} sm={6} md={4} lg={3} key={item.id}>
+              <Grid item xs={12} sm={6} md={4} lg={3} key={item.id} >
                 <Card>
                   <CardMedia
                     component="img"
-                    height="500"
+                    height="100%"
                     image={item['item-image']}
                     alt={item.name}
                   />
@@ -59,8 +74,20 @@ export default function Order() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small">Add to Cart</Button>
-                    <Button rel="noreferrer noopener" target="_blank" component="a" href={menu.info} size="small">Learn More</Button>
+                    <Button
+                      size="small"
+                      onClick={() => addToCart(item)}
+                    >
+                      Add to Cart
+                    </Button>
+                    <Button
+                      rel="noreferrer noopener"
+                      target="_blank" component="a"
+                      href={item.info}
+                      size="small"
+                    >
+                      Learn More
+                    </Button>
                   </CardActions>
                 </Card>
               </Grid>
@@ -70,6 +97,6 @@ export default function Order() {
         )}
 
       </Box>
-    </Fragment>
+    </Fragment >
   );
 }

@@ -7,7 +7,7 @@ import Contact from "./components/Contact.js";
 import Gallery from "./components/Gallery.js";
 import Menu from "./components/Menu.js";
 import Order from "./components/Order.js";
-import Chef from "./components/Chef.js";
+import Confirmation from "./components/Confirmation.js";
 import GoogleLogin from "./components/GoogleLogin.js";
 import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged } from "firebase/auth";
 import { app } from "./firebase/firebase.js";
@@ -15,6 +15,7 @@ import { useState } from "react";
 
 import "./App.css";
 import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
+import Cart from "./components/Cart.js";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -72,7 +73,8 @@ function App() {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/menu" element={<Menu />} />
             <Route path="/order" element={<Order />} />
-            <Route path="/chef" element={<Chef />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/confirmation" element={<Confirmation />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />
