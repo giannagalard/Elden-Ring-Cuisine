@@ -102,7 +102,7 @@ export default function Cart() {
                                 <Grid item xs={12}>
                                     <Box sx={{ display: "flex", justifyContent: "center" }}>
                                         <Typography sx={{ background: "#721702", width: "50%", borderRadius: "5px" }} color="white" variant="h5" component="h2">
-                                            Total: {total}
+                                            Total: {total} Runes
                                         </Typography>
                                         <Button onClick={onCheckout} sx={{ width: "50%" }} variant="contained" color="primary">
                                             Checkout
