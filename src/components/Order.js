@@ -72,6 +72,9 @@ export default function Order() {
                     <Typography gutterBottom variant="h5" component="div">
                       {item.name}
                     </Typography>
+                    <Typography variant="body2" color="textSecondary" component="div">
+                      {item.price} Runes
+                    </Typography>
                   </CardContent>
                   <CardActions>
                     <Button
