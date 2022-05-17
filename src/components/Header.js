@@ -76,11 +76,6 @@ export default function Header() {
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" aria-current="page" href="/contact">
-                      Contact Us
-                    </a>
-                  </li>
-                  <li className="nav-item">
                     <a className="nav-link" onClick={signOut} aria-current="page" href="/order">
                       Logout
                     </a>
@@ -93,6 +88,11 @@ export default function Header() {
                   </a>
                 </li>
               )}
+              <li className="nav-item">
+                <a className="nav-link" aria-current="page" href="/contact">
+                  Contact Us
+                </a>
+              </li>
             </ul>
           </div>
         </div>
