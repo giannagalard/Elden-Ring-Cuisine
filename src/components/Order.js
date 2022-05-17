@@ -94,11 +94,9 @@ export default function Order() {
                   </CardActions>
                 </Card>
               </Grid>
-
             ))}
           </Grid>
         )}
-
       </Box>
     </Fragment >
   );
