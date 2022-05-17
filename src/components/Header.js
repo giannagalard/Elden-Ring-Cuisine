@@ -58,16 +58,11 @@ export default function Header() {
                   Menu
                 </a>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a className="nav-link" aria-current="page" href="/gallery">
                   Gallery
                 </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="/contact">
-                  Contact Us
-                </a>
-              </li>
+              </li> */}
               {isAuthenticated ? (
                 <Fragment>
                   <li className="nav-item">
@@ -78,6 +73,11 @@ export default function Header() {
                   <li className="nav-item">
                     <a className="nav-link" aria-current="page" href="/cart">
                       Cart
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" aria-current="page" href="/contact">
+                      Contact Us
                     </a>
                   </li>
                   <li className="nav-item">
